@@ -122,7 +122,7 @@ export default {
 					]
 				}
 			],
-			copyright: `Licensed under the <a href="https://license.fileto.download/" target="_blank" rel="noopener noreferrer">F2DLPR License</a>. Copyright © 2016-${new Date().getFullYear()} <a href="https://shiror.ren/" target="_blank" rel="noopener noreferrer">ShIroRRen</a>. Built with <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`
+			copyright: `Licensed under the <a href="https://license.fileto.download/" target="_blank">F2DLPR License</a>. Copyright © 2016-${new Date().getFullYear()} <a href="https://shiror.ren/" target="_blank">ShIroRRen</a>. Built with <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`
 		},
 		prism: {
 			theme: prismThemes.github,
