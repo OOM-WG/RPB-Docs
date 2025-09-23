@@ -9,5 +9,5 @@
 })(window, document, 'script', 'aplus_queue', '203467608')
 aplus_queue.push({
 	action: 'aplus.setMetaInfo',
-	arguments: ['appKey', '681f312a79267e02105eae17']
+	arguments: ['appKey', '68d2bd7ac261f2773328006a']
 })
