@@ -59,6 +59,11 @@ export default {
 					href: 'https://oom-wg.dev/join',
 					label: 'OOM',
 					position: 'right'
+				},
+				{
+					href: 'https://github.com/OOM-WG/RPB-Docs',
+					label: 'GitHub',
+					position: 'right'
 				}
 			]
 		},
