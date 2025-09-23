@@ -10,7 +10,7 @@ export default {
 
 	future: {v4: true},
 
-	url: 'https://rpb.oom-wg.dev',
+	url: 'https://root.oom-wg.dev',
 	baseUrl: '/',
 
 	onBrokenLinks: 'throw',
