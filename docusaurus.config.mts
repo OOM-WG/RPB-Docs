@@ -13,15 +13,7 @@ export default {
 	url: 'https://root.oom-wg.dev',
 	baseUrl: '/',
 
-	scripts:
-		process.env.NODE_ENV === 'production'
-			? [
-					{
-						src: '/umeng.js',
-						async: true
-					}
-				]
-			: [],
+	scripts: process.env.NODE_ENV === 'production' ? [{src: '/umeng.js'}] : [],
 
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
