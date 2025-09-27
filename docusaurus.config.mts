@@ -33,6 +33,16 @@ export default {
 		]
 	],
 
+	themes: [
+		[
+			require.resolve('@easyops-cn/docusaurus-search-local'),
+			{
+				hashed: true,
+				language: ['en', 'zh']
+			}
+		]
+	],
+
 	themeConfig: {
 		tableOfContents: {maxHeadingLevel: 6},
 		navbar: {
