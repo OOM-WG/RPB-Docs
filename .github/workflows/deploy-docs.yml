@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: latest
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm i --no-frozen-lockfile
       - name: Build
         run: pnpm build
       - name: Deploy Pages
