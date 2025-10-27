@@ -134,7 +134,7 @@ export default {
 					]
 				}
 			],
-			copyright: `Licensed under the <a href="https://license.fileto.download/" target="_blank">F2DLPR License</a>. Copyright © 2016-${new Date().getFullYear()} <a href="https://shiror.ren/" target="_blank">ShIroRRen</a>. Built with <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`
+			copyright: `根据 <a href="https://license.fileto.download/" target="_blank">F2DLPR 许可证</a>授权许可。©️ 2016-${new Date().getFullYear()} <a href="https://shiror.ren/" target="_blank">白彩恋</a>，版权所有，保留一切权利。使用 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">Docusaurus</a> 构建。<br/>本网页使用 <a href="https://www.umeng.com/" target="_blank" rel="noopener noreferrer"><code>友盟+</code></a> 收集使用数据，详见 <a href="https://www.umeng.com/policy" target="_blank" rel="noopener noreferrer"><code>友盟+</code> 隐私权政策</a>。`
 		},
 		prism: {
 			theme: prismThemes.github,
