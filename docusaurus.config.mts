@@ -15,9 +15,6 @@ export default {
 
 	scripts: process.env.NODE_ENV === 'production' ? [{src: '/umeng.js'}] : [],
 
-	onBrokenLinks: 'throw',
-	onBrokenMarkdownLinks: 'warn',
-
 	i18n: {
 		defaultLocale: 'zh-Hans',
 		locales: ['zh-Hans']
