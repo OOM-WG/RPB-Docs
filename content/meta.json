@@ -1,0 +1,14 @@
+{
+	"pages": [
+		"---[Album]速览---",
+		"index",
+		"---[BookOpenText]教程---",
+		"tutorial/unlock-device",
+		"tutorial/root-device",
+		"---[Smartphone]机型---",
+		"series/gt",
+		"series/neo",
+		"---[PackageOpen]资源---",
+		"resources"
+	]
+}

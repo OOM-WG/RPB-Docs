@@ -42,6 +42,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: docs-dist
-          folder: build
+          folder: out
           clean: true
           single-commit: true
