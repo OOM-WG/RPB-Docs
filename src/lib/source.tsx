@@ -146,12 +146,12 @@ export const docsOptions = {
 				{
 					type: 'main',
 					text: 'GT 系列',
-					url: '/gt'
+					url: '/series/gt'
 				},
 				{
 					type: 'main',
 					text: 'Neo 系列',
-					url: '/neo'
+					url: '/series/neo'
 				}
 			]
 		},
