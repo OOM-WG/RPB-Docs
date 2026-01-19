@@ -29,11 +29,11 @@ export const docsConfig = {
 				items: [
 					{
 						label: 'GT 系列',
-						href: '/gt'
+						href: '/series/gt'
 					},
 					{
 						label: 'Neo 系列',
-						href: '/neo'
+						href: '/series/neo'
 					}
 				]
 			},
