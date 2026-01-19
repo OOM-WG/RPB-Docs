@@ -46,7 +46,7 @@ export async function GET() {
 				.getPages()
 				.map(
 					page =>
-						`- [**${page.data.title}**](${docsConfig.baseUrl}${page.url === '/' ? '/index' : page.url}.md)${page.data.description ? `: ${page.data.description}` : ''}`
+						`- [**${page.data.title}**](${docsConfig.baseUrl}${page.url === '/' ? '/index' : page.url}.mdx)${page.data.description ? `: ${page.data.description}` : ''}`
 				)
 				.join('\n') +
 			(docsConfig.footer.links.length > 0
