@@ -13,7 +13,10 @@ import {JSX} from 'react'
 export const docsConfig = {
 	title: 'R+B 玩机教程站',
 	baseUrl: 'https://root.oom-wg.dev',
-	authors: [{name: 'ShIroRRen', url: 'https://shiror.ren'}] satisfies Author[],
+	authors: [
+		{name: 'ShIroRRen', url: 'https://shiror.ren'},
+		{name: 'R+B 玩机乐园', url: 'https://realme.gtrom.eu.org'}
+	] satisfies Author[],
 	icon: {
 		url: new URL('./logo.webp', import.meta.url),
 		size: 32
