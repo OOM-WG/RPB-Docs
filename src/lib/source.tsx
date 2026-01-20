@@ -7,7 +7,6 @@ import type {BaseLayoutProps} from 'fumadocs-ui/layouts/shared'
 import {Author} from 'next/dist/lib/metadata/types/metadata-types'
 import Image from 'next/image'
 import Link from 'next/link'
-import {InputType} from 'node:zlib'
 import {OpenAPIV3_1} from 'openapi-types'
 import {JSX} from 'react'
 
