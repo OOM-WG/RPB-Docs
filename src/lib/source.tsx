@@ -142,29 +142,30 @@ export const docsOptions = {
 			children: <GithubInfo owner={docsConfig.git.user} repo={docsConfig.git.repo} />
 		},
 		{
-			type: 'menu',
+			type: 'menu' as const,
 			text: 'ROOT 教程',
 			items: [
 				{
-					type: 'main',
+					type: 'main' as const,
 					text: 'GT 系列',
 					url: '/series/gt'
 				},
 				{
-					type: 'main',
+					type: 'main' as const,
 					text: 'Neo 系列',
 					url: '/series/neo'
 				}
 			]
 		},
 		{
-			type: 'main',
+			type: 'main' as const,
 			text: 'QQ 群',
 			url: '/qq',
 			description: '获取免费工具箱资源请加群'
 		}
 	],
-	githubUrl: `https://github.com/${docsConfig.git.user}/${docsConfig.git.repo}`
+	githubUrl: `https://github.com/${docsConfig.git.user}/${docsConfig.git.repo}`,
+	themeSwitch: {mode: 'light-dark-system' as const}
 } satisfies BaseLayoutProps as BaseLayoutProps
 
 function defineDocs(
