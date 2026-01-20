@@ -15,7 +15,7 @@ export default ({children}: LayoutProps<'/'>) => (
 	<html lang='zh-Hans' className={ubuntu.className} suppressHydrationWarning>
 		<head>
 			{process.env.NODE_ENV === 'production' && (
-				<Script src='/umeng.js' strategy='beforeInteractive' />
+				<Script src='/analytics.js' strategy='beforeInteractive' />
 			)}
 		</head>
 		<body className='flex flex-col min-h-screen'>

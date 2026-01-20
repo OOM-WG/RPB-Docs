@@ -82,21 +82,27 @@ export const docsConfig = {
 			<span>
 				根据{' '}
 				<Link href='https://license.fileto.download/' target='_blank'>
-					F2DLPR 许可证
-				</Link>
+					F2DLPR License
+				</Link>{' '}
 				授权许可。©️ 2016-{new Date().getFullYear()}{' '}
 				<Link href='https://shiror.ren/' target='_blank'>
 					白彩恋
 				</Link>
 				，版权所有，保留一切权利。
 				<br />
-				本网页使用{' '}
-				<Link href='https://www.umeng.com/' target='_blank' rel='noopener noreferrer'>
-					友盟+
-				</Link>{' '}
-				收集使用数据，详见{' '}
-				<Link href='https://www.umeng.com/policy' target='_blank' rel='noopener noreferrer'>
-					友盟+ 隐私权政策
+				本网页使用 <i>Clarity</i>、<i>Cloudflare Web Analytics</i> 监控流量，详见{' '}
+				<Link
+					href='https://clarity.microsoft.com/terms'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Clarity 使用条款
+				</Link>
+				、
+				<Link
+					href='https://www.cloudflare.com/privacypolicy/'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Cloudflare Web Analytics
 				</Link>
 			</span>
 		)
