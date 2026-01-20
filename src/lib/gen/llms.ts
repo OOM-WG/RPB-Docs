@@ -6,7 +6,7 @@ import path from 'path'
 import {docsConfig, source} from '../source'
 
 export const getLLMText = async (page: InferPageType<typeof source>) =>
-	`# ${page.data.title}\n\n> Source: ${'<'}${docsConfig.baseUrl}${page.url}>${
+	`# [${page.data.title}](${docsConfig.baseUrl}${page.url})${page.data.description ? `\n\n> ${page.data.description}` : ''}${
 		page.data.type === ('docs' as const)
 			? await page.data.getText('processed')
 			: `\n\nexport const props = ${JSON.stringify(
