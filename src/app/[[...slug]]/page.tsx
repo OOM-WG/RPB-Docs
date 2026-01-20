@@ -16,7 +16,7 @@ import {getPageImage} from '@/lib/gen/img'
 import {docsConfig, source} from '@/lib/source'
 import {getMDXComponents} from '@/mdx-components'
 
-import APIPage from './page.mdx'
+import APIPage from './api-page.mdx'
 
 const BUILD_TIME = new Date().toLocaleString('zh-Hant', {
 	timeZone: 'Asia/Shanghai',
