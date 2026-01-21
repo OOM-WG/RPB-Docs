@@ -53,9 +53,11 @@ import {Megaphone, Users} from 'lucide-react'
 			href: `https://qm.qq.com/q/${group.suffix}`,
 			icon: <Users />
 		}))
-	].map(info => (
-		<Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
-			{info.desc}
-		</Card>
-	))}
+	]
+		.reverse()
+		.map(info => (
+			<Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
+				{info.desc}
+			</Card>
+		))}
 </Cards>
