@@ -1,5 +1,4 @@
 * text=auto
-** linguist-documentation
 
 *.md text eol=lf linguist-documentation
 *.mkd text eol=lf linguist-documentation
