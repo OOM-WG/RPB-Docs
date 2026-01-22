@@ -70,5 +70,8 @@ export const metadata = {
 			index: true,
 			follow: true
 		}
+	},
+	other: {
+		'baidu-site-verification': 'codeva-4jIuP1Zq6x'
 	}
 } satisfies Metadata
