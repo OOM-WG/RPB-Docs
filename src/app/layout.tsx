@@ -4,6 +4,7 @@ import {Metadata} from 'next'
 import {Ubuntu} from 'next/font/google'
 import Script from 'next/script'
 
+import Clarity from '@/components/clarity'
 import SearchDialog from '@/components/search'
 import {docsConfig, docsOptions, source} from '@/lib/source'
 
@@ -15,8 +16,32 @@ export default ({children}: LayoutProps<'/'>) => (
 	<html lang='zh-Hans' className={ubuntu.className} suppressHydrationWarning>
 		<head>
 			{process.env.NODE_ENV === 'production' && (
-				<Script src='/analytics.js' strategy='beforeInteractive' />
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `(${function () {
+							if (['127.0.0.1', 'localhost'].includes(window.location.hostname)) return
+							function onerror() {
+								console.error(
+									'%c ERROR!!! ',
+									'color: white; background: red; font-size: 88px; font-weight: bold; padding: 22px;'
+								)
+							}
+							;(function (script) {
+								script.src = 'https://static.cloudflareinsights.com/beacon.min.js'
+								script.defer = true
+								script.setAttribute(
+									'data-cf-beacon',
+									`{"token": "8d9aea5da8324e478aae6f32f0cf6837"}`
+								)
+								script.onerror = onerror
+								document.head.appendChild(script)
+							})(document.createElement('script'))
+							// Cloudflare Web Analytics: https://www.cloudflare.com/web-analytics/
+						}})()`
+					}}
+				/>
 			)}
+			<Clarity />
 		</head>
 		<body className='flex flex-col min-h-screen'>
 			<RootProvider
