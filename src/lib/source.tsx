@@ -8,7 +8,7 @@ import {Author} from 'next/dist/lib/metadata/types/metadata-types'
 import Image from 'next/image'
 import Link from 'next/link'
 import {OpenAPIV3_1} from 'openapi-types'
-import {JSX} from 'react'
+import {ReactNode} from 'react'
 
 export const docsConfig = {
 	title: 'R+B 玩机教程站',
@@ -18,7 +18,7 @@ export const docsConfig = {
 		{name: 'R+B 玩机乐园', url: 'https://realme.gtrom.eu.org'}
 	] satisfies Author[],
 	icon: {
-		url: new URL('./logo.webp', import.meta.url),
+		url: new URL('../assets/logo.webp', import.meta.url),
 		size: 32
 	} satisfies {
 		url: URL
@@ -114,7 +114,7 @@ export const docsConfig = {
 				href: string
 			}[]
 		}[]
-		copyright: string | JSX.Element
+		copyright: ReactNode
 	},
 	git: {
 		user: 'OOM-WG',
@@ -182,7 +182,7 @@ export const docsOptions = {
 	themeSwitch: {mode: 'light-dark-system' as const}
 } satisfies BaseLayoutProps as BaseLayoutProps
 
-function defineDocs(
+const defineDocs = (
 	input: Record<
 		string,
 		{
@@ -191,7 +191,7 @@ function defineDocs(
 			values: Record<string, any>
 		}
 	>
-) {
+) => {
 	const paths = {} as OpenAPIV3_1.PathsObject
 
 	for (const [path, item] of Object.entries(input))
@@ -214,7 +214,7 @@ function defineDocs(
 		paths
 	} satisfies OpenAPIV3_1.Document as OpenAPIV3_1.Document
 }
-function defineInfo(
+const defineInfo = (
 	input: Record<
 		string,
 		{
@@ -222,7 +222,7 @@ function defineInfo(
 			values: Record<string, any>
 		}
 	>
-) {
+) => {
 	const docsInput = {} as Record<
 		string,
 		{

@@ -4,9 +4,9 @@ import {Metadata} from 'next'
 import {Ubuntu} from 'next/font/google'
 import Script from 'next/script'
 
-import Clarity from '@/components/clarity'
-import SearchDialog from '@/components/search'
 import {docsConfig, docsOptions, source} from '@/lib/source'
+import Clarity from '@/widgets/clarity'
+import SearchDialog from '@/widgets/ui/search'
 
 import './global.css'
 

@@ -12,10 +12,10 @@ import Link from 'next/link'
 import {notFound} from 'next/navigation'
 import {OpenAPIV3_1} from 'openapi-types'
 
-import {LLMCopyButton, ViewOptions} from '@/components/ai/page-actions'
-import {getPageImage} from '@/lib/gen/img'
+import {getMDXWidgets} from '@/lib/mdx'
 import {docsConfig, source} from '@/lib/source'
-import {getMDXComponents} from '@/mdx-components'
+import {getPageImage} from '@/utils/img'
+import {LLMCopyButton, ViewOptions} from '@/widgets/ui/ai-buttons'
 
 import APIPage from './api-page.mdx'
 
@@ -26,9 +26,9 @@ const BUILD_TIME = new Date().toLocaleString('zh-Hant', {
 	day: '2-digit'
 })
 
-export default async function Page(props: PageProps<'/[[...slug]]'>) {
+export default async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
-	const components = getMDXComponents({a: createRelativeLink(source, page)})
+	const components = getMDXWidgets({a: createRelativeLink(source, page)})
 
 	const info = page.data.type !== ('docs' as const) ? page.data.getAPIPageProps().operations![0] : null
 
@@ -138,7 +138,7 @@ export default async function Page(props: PageProps<'/[[...slug]]'>) {
 
 export const generateStaticParams = async () => source.generateParams()
 
-export async function generateMetadata(props: PageProps<'/[[...slug]]'>) {
+export const generateMetadata = async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
 
 	const isIndex = page.url === '/'
