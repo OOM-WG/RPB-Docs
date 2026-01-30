@@ -1,14 +1,14 @@
-import {Source, loader, multiple} from 'fumadocs-core/source'
+import {type Source, loader, multiple} from 'fumadocs-core/source'
 import {lucideIconsPlugin} from 'fumadocs-core/source/lucide-icons'
 import {docs} from 'fumadocs-mdx:collections/server'
 import {createOpenAPI, openapiPlugin, openapiSource} from 'fumadocs-openapi/server'
 import {GithubInfo} from 'fumadocs-ui/components/github-info'
 import type {BaseLayoutProps} from 'fumadocs-ui/layouts/shared'
-import {Author} from 'next/dist/lib/metadata/types/metadata-types'
+import type {Author} from 'next/dist/lib/metadata/types/metadata-types'
 import Image from 'next/image'
 import Link from 'next/link'
-import {OpenAPIV3_1} from 'openapi-types'
-import {ReactNode} from 'react'
+import type {OpenAPIV3_1} from 'openapi-types'
+import {type ReactNode} from 'react'
 
 export const docsConfig = {
 	title: 'R+B 玩机教程站',
@@ -411,8 +411,8 @@ export const source = loader(
 	multiple({
 		docs: docs.toFumadocsSource(),
 
-		gt: seriesSource[0],
-		neo: seriesSource[1]
+		gt: seriesSource[0]!,
+		neo: seriesSource[1]!
 	}),
 	{
 		baseUrl: '/',

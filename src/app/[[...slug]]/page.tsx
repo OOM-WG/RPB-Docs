@@ -10,7 +10,7 @@ import {Bot, ExternalLink} from 'lucide-react'
 import type {Metadata} from 'next'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
-import {OpenAPIV3_1} from 'openapi-types'
+import type {OpenAPIV3_1} from 'openapi-types'
 
 import {getMDXWidgets} from '@/lib/mdx'
 import {docsConfig, source} from '@/lib/source'
