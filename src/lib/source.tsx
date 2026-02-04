@@ -387,24 +387,19 @@ const gtSource = await openapiSource(gtConfig, {baseDir: 'series/gt'})
 const neoSource = await openapiSource(neoConfig, {baseDir: 'series/neo'})
 
 const seriesSource = [gtSource, neoSource].map(
-	src =>
-		({
-			...src,
-			files: src.files.map(file =>
-				file.type === 'page'
-					? ({
-							...file,
-							path: file.path.replace(
-								/[\\\/](get|post|put|delete|patch|options|head)\.mdx$/,
-								'.mdx'
-							)
-						} satisfies Extract<(typeof src)['files'][number], {type: 'page'}>)
-					: file
+	src => (
+		(src.files = src.files.map(
+			file => (
+				file.type === 'page' &&
+					(file.path = file.path.replace(
+						/[\\\/](get|post|put|delete|patch|options|head)\.mdx$/,
+						'.mdx'
+					)),
+				file
 			)
-		}) as Source<{
-			metaData: never
-			pageData: Extract<(typeof src)['files'][number], {type: 'page'}>['data']
-		}>
+		)),
+		src
+	)
 )
 
 export const source = loader(
