@@ -10,17 +10,16 @@ export default async ({name, config}: {name: string; config: OpenAPIServer}) => 
 	<>
 		<SeriesInfo components={getMDXWidgets()} />
 		<Cards>
-			{Object.entries((await config.getSchemas())[name]!.dereferenced.paths!).map(([key, item]) => {
-				const info = item![Object.keys(item!)[0]!.toLocaleLowerCase() as OpenAPIV3_1.HttpMethods]!
-				return (
+			{Object.entries((await config.getSchemas())[name]!.dereferenced.paths!).map(([key, item]) =>
+				(info => (
 					<Card
 						key={key}
 						title={info.summary}
 						description={info.description}
 						href={key.toLowerCase()}
 					/>
-				)
-			})}
+				))(item![Object.keys(item!)[0]!.toLowerCase() as OpenAPIV3_1.HttpMethods]!)
+			)}
 		</Cards>
 	</>
 )
