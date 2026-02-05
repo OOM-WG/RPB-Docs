@@ -1,7 +1,7 @@
 {
-	"name": "nga-docs",
+	"name": "rpb-docs",
 	"private": true,
-	"description": "NGA Docs",
+	"description": "RPB Docs",
 	"license": "F2DLPRL",
 	"author": "ShIroRRen",
 	"type": "module",
