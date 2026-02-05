@@ -2,6 +2,7 @@
 
 *.config.*js linguist-vendored
 *.config.*ts linguist-vendored
+source.ts* linguist-vendored
 
 *.md text eol=lf linguist-documentation
 *.mkd text eol=lf linguist-documentation
