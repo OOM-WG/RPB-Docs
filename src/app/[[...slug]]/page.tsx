@@ -141,9 +141,7 @@ export const generateStaticParams = async () => source.generateParams()
 export const generateMetadata = async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
 
-	const isIndex = page.url === '/'
-
-	const titleConfig = isIndex ? {absolute: docsConfig.title} : page.data.title
+	const titleConfig = page.url === '/' ? {absolute: docsConfig.title} : page.data.title
 
 	return {
 		alternates: {canonical: page.url || '/'},
