@@ -246,151 +246,143 @@ const defineInfo = (
 	return defineDocs(docsInput)
 }
 
-export const gtConfig = createOpenAPI({
-	input: () => ({
-		gt: defineInfo({
-			RMX2086: {
-				name: 'X3 超级变焦版',
-				values: {cnName: 'none'}
-			},
-			RMX2202: {
-				name: 'GT',
-				values: {ramdisk: 'boot', unlock: 5}
-			},
-			RMX3361: {
-				name: 'GT 大师版',
-				values: {ramdisk: 'boot', unlock: 'none'}
-			},
-			RMX3366: {
-				name: 'GT 大师探索版',
-				values: {ramdisk: 'boot', unlock: 'kona'}
-			},
-			RMX3310: {
-				name: 'GT2',
-				values: {ramdisk: 'boot', unlock: 3}
-			},
-			RMX3300: {
-				name: 'GT2 Pro',
-				values: {ramdisk: 'boot', unlock: 3}
-			},
-			RMX3551: {
-				name: 'GT2 大师探索版',
-				values: {ramdisk: 'boot', unlock: 3}
-			},
-			RMX3820: {
-				name: 'GT5 150W',
-				values: {ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX3823: {
-				name: 'GT5 240W',
-				values: {ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX3888: {
-				name: 'GT5 Pro',
-				values: {ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX3800: {
-				name: 'GT6',
-				values: {ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX5010: {
-				name: 'GT7 Pro',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX5090: {
-				name: 'GT7 Pro 竞速版',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX6688: {
-				name: 'GT7 & GT7 阿斯顿马丁F1限量版',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX6699: {
-				name: 'GT8',
-				values: {ramdisk: 'init_boot', unlock: 7}
-			},
-			RMX5200: {
-				name: 'GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版',
-				values: {ramdisk: 'init_boot', unlock: 7}
-			}
-		})
-	})
+export const gtConfig = (cfg => createOpenAPI({input: () => ({gt: defineInfo(cfg)})}))({
+	RMX2086: {
+		name: 'X3 超级变焦版',
+		values: {cnName: 'none'}
+	},
+	RMX2202: {
+		name: 'GT',
+		values: {ramdisk: 'boot', unlock: 5}
+	},
+	RMX3361: {
+		name: 'GT 大师版',
+		values: {ramdisk: 'boot', unlock: 'none'}
+	},
+	RMX3366: {
+		name: 'GT 大师探索版',
+		values: {ramdisk: 'boot', unlock: 'kona'}
+	},
+	RMX3310: {
+		name: 'GT2',
+		values: {ramdisk: 'boot', unlock: 3}
+	},
+	RMX3300: {
+		name: 'GT2 Pro',
+		values: {ramdisk: 'boot', unlock: 3}
+	},
+	RMX3551: {
+		name: 'GT2 大师探索版',
+		values: {ramdisk: 'boot', unlock: 3}
+	},
+	RMX3820: {
+		name: 'GT5 150W',
+		values: {ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX3823: {
+		name: 'GT5 240W',
+		values: {ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX3888: {
+		name: 'GT5 Pro',
+		values: {ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX3800: {
+		name: 'GT6',
+		values: {ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX5010: {
+		name: 'GT7 Pro',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX5090: {
+		name: 'GT7 Pro 竞速版',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX6688: {
+		name: 'GT7 & GT7 阿斯顿马丁F1限量版',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX6699: {
+		name: 'GT8',
+		values: {ramdisk: 'init_boot', unlock: 7}
+	},
+	RMX5200: {
+		name: 'GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版',
+		values: {ramdisk: 'init_boot', unlock: 7}
+	}
 })
-export const neoConfig = createOpenAPI({
-	input: () => ({
-		neo: defineInfo({
-			RMX3031: {
-				name: 'GT Neo',
-				values: {glName: 'realme X7 Max', ramdisk: 'boot', unlock: 'mt6893'}
-			},
-			RMX3350: {
-				name: 'GT Neo 闪速版',
-				values: {ramdisk: 'boot', unlock: 'mt6893'}
-			},
-			RMX3370: {
-				name: 'GT Neo2 & GT Neo2 龙珠定制版',
-				values: {ramdisk: 'boot', unlock: 'kona'}
-			},
-			RMX3357: {
-				name: 'GT Neo2T',
-				values: {ramdisk: 'boot', unlock: 'mt6893'}
-			},
-			RMX3560: {
-				name: 'GT Neo3 80W',
-				values: {ramdisk: 'boot', unlock: 3}
-			},
-			RMX3562: {
-				name: 'GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版',
-				values: {ramdisk: 'boot', unlock: 3}
-			},
-			RMX3371: {
-				name: 'GT Neo3T',
-				values: {cnName: '真我 Q5 Pro'}
-			},
-			RMX3700: {
-				name: 'GT Neo5 SE',
-				values: {ramdisk: 'boot', unlock: 4}
-			},
-			RMX3706: {
-				name: 'GT Neo5 150W',
-				values: {glName: 'realme GT3 150W', ramdisk: 'boot', unlock: 4}
-			},
-			RMX3708: {
-				name: 'GT Neo5 240W',
-				values: {glName: 'realme GT3 240W', ramdisk: 'boot', unlock: 4}
-			},
-			RMX3850: {
-				name: 'GT Neo6 SE',
-				values: {glName: 'realme GT6T', ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX3852: {
-				name: 'GT Neo6',
-				values: {glName: 'realme GT6', ramdisk: 'init_boot', unlock: 5}
-			},
-			RMX5060: {
-				name: 'Neo7 & Neo7 不良人限定版',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX5071: {
-				name: 'Neo7x',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX5080: {
-				name: 'Neo7 SE',
-				values: {glName: 'realme GT7T', ramdisk: 'init_boot', unlock: 6}
-			},
-			RMX5062: {
-				name: 'Neo7 Turbo',
-				values: {ramdisk: 'init_boot', unlock: 6}
-			}
-		})
-	})
+export const neoConfig = (cfg => createOpenAPI({input: () => ({neo: defineInfo(cfg)})}))({
+	RMX3031: {
+		name: 'GT Neo',
+		values: {glName: 'realme X7 Max', ramdisk: 'boot', unlock: 'mt6893'}
+	},
+	RMX3350: {
+		name: 'GT Neo 闪速版',
+		values: {ramdisk: 'boot', unlock: 'mt6893'}
+	},
+	RMX3370: {
+		name: 'GT Neo2 & GT Neo2 龙珠定制版',
+		values: {ramdisk: 'boot', unlock: 'kona'}
+	},
+	RMX3357: {
+		name: 'GT Neo2T',
+		values: {ramdisk: 'boot', unlock: 'mt6893'}
+	},
+	RMX3560: {
+		name: 'GT Neo3 80W',
+		values: {ramdisk: 'boot', unlock: 3}
+	},
+	RMX3562: {
+		name: 'GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版',
+		values: {ramdisk: 'boot', unlock: 3}
+	},
+	RMX3371: {
+		name: 'GT Neo3T',
+		values: {cnName: '真我 Q5 Pro'}
+	},
+	RMX3700: {
+		name: 'GT Neo5 SE',
+		values: {ramdisk: 'boot', unlock: 4}
+	},
+	RMX3706: {
+		name: 'GT Neo5 150W',
+		values: {glName: 'realme GT3 150W', ramdisk: 'boot', unlock: 4}
+	},
+	RMX3708: {
+		name: 'GT Neo5 240W',
+		values: {glName: 'realme GT3 240W', ramdisk: 'boot', unlock: 4}
+	},
+	RMX3850: {
+		name: 'GT Neo6 SE',
+		values: {glName: 'realme GT6T', ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX3852: {
+		name: 'GT Neo6',
+		values: {glName: 'realme GT6', ramdisk: 'init_boot', unlock: 5}
+	},
+	RMX5060: {
+		name: 'Neo7 & Neo7 不良人限定版',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX5071: {
+		name: 'Neo7x',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX5080: {
+		name: 'Neo7 SE',
+		values: {glName: 'realme GT7T', ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX5062: {
+		name: 'Neo7 Turbo',
+		values: {ramdisk: 'init_boot', unlock: 6}
+	}
 })
 
-const gtSource = await openapiSource(gtConfig, {baseDir: 'series/gt'})
-const neoSource = await openapiSource(neoConfig, {baseDir: 'series/neo'})
-
-const seriesSource = [gtSource, neoSource].map(
+const seriesSource = [
+	await openapiSource(gtConfig, {baseDir: 'series/gt'}),
+	await openapiSource(neoConfig, {baseDir: 'series/neo'})
+].map(
 	src => (
 		(src.files = src.files.map(
 			file => (
