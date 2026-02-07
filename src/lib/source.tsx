@@ -376,6 +376,10 @@ export const neoConfig = (cfg => createOpenAPI({input: () => ({neo: defineInfo(c
 	RMX5062: {
 		name: 'Neo7 Turbo',
 		values: {ramdisk: 'init_boot', unlock: 6}
+	},
+	RMX8899: {
+		name: 'Neo8',
+		values: {ramdisk: 'init_boot', unlock: 7}
 	}
 })
 
