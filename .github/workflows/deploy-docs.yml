@@ -7,6 +7,9 @@ on:
     branches: [shiror.ren]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: docs-deployer
   cancel-in-progress: true
