@@ -196,7 +196,7 @@ const defineDocs = (
 		}
 	>
 ) => {
-	const paths = {} as OpenAPIV3_1.PathsObject
+	const paths = {} as Record<string, any>
 
 	for (const [path, item] of Object.entries(input))
 		paths[path] = {
@@ -213,10 +213,10 @@ const defineDocs = (
 		} satisfies OpenAPIV3_1.PathsObject[string]
 
 	return {
-		openapi: '3.1.0',
+		openapi: '3.2.0' as const,
 		info: {title: 'OpenAPI Document', version: '0.0.0'},
 		paths
-	} satisfies OpenAPIV3_1.Document as OpenAPIV3_1.Document
+	} satisfies OpenAPIV3_1.Document
 }
 const defineInfo = (
 	input: Record<
