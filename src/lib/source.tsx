@@ -277,11 +277,11 @@ export const gtConfig = (cfg => createOpenAPI({input: () => ({gt: defineInfo(cfg
 	},
 	RMX3820: {
 		name: 'GT5 150W',
-		values: {ramdisk: 'init_boot', unlock: 5}
+		values: {ramdisk: 'init_boot', unlock: 4}
 	},
 	RMX3823: {
 		name: 'GT5 240W',
-		values: {ramdisk: 'init_boot', unlock: 5}
+		values: {ramdisk: 'init_boot', unlock: 4}
 	},
 	RMX3888: {
 		name: 'GT5 Pro',
