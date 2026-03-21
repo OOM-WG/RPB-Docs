@@ -331,11 +331,11 @@ export const neoConfig = (cfg => createOpenAPI({input: () => ({neo: defineInfo(c
 	},
 	RMX3560: {
 		name: 'GT Neo3 80W',
-		values: {ramdisk: 'boot', unlock: 3}
+		values: {ramdisk: 'boot', unlock: 'mt6895'}
 	},
 	RMX3562: {
 		name: 'GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版',
-		values: {ramdisk: 'boot', unlock: 3}
+		values: {ramdisk: 'boot', unlock: 'mt6895'}
 	},
 	RMX3371: {
 		name: 'GT Neo3T',

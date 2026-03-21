@@ -67,17 +67,19 @@ import {LockKeyholeOpen, PackageOpen, ShieldCheck} from 'lucide-react'
 		}>
 		若已解锁，可跳过该部分
 		{typeof props.unlock !== 'number' && <br />}
-		{props.unlock === 'kona' && (
-			<span>
-				可以进群<strong>询问管理员</strong>获取解锁方法！或自行学习强解教程解锁！(该链接为强解教程)
-			</span>
-		)}
-		{props.unlock === 'mt6893' && (
+		{props.unlock === 'none' ? (
+			<span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+		) : (
 			<span>
 				可以进群<strong>询问管理员</strong>获取解锁方法！
+				{props.unlock === 'kona' && (
+					<>
+						<br />
+						也可自行学习强解教程解锁！(该链接为强解教程)
+					</>
+				)}
 			</span>
 		)}
-		{props.unlock === 'none' && <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>}
 	</Card>
 	<Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
 		ROOT 需要先解锁设备
