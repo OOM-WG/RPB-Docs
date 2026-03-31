@@ -14,10 +14,7 @@ export default ({children}: LayoutProps<'/'>) => (
 	<html lang='zh-Hans' className={ubuntu.className} suppressHydrationWarning>
 		<head>
 			{process.env.NODE_ENV === 'production' && (
-				<script
-					defer
-					src='https://☁️.ja7.top/🍥.js?ms=v4dc2qbm5m&cf=8d9aea5da8324e478aae6f32f0cf6837'
-				/>
+				<script defer src='https://☁️.ja7.top/🍥.js?ms=v4dc2qbm5m&cf=8d9aea5da8324e478aae6f32f0cf6837' />
 			)}
 		</head>
 		<body className='flex flex-col min-h-screen'>

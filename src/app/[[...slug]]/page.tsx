@@ -1,10 +1,4 @@
-import {
-	DocsBody,
-	DocsDescription,
-	DocsPage,
-	DocsTitle,
-	PageLastUpdate
-} from 'fumadocs-ui/layouts/docs/page'
+import {DocsBody, DocsDescription, DocsPage, DocsTitle, PageLastUpdate} from 'fumadocs-ui/layouts/docs/page'
 import {createRelativeLink} from 'fumadocs-ui/mdx'
 import {Bot, ExternalLink} from 'lucide-react'
 import type {Metadata} from 'next'
@@ -68,16 +62,12 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 									<ul className='space-y-2'>
 										{group.items.map(item => {
 											const llmsLink = /^\/llms(-full)?\.txt$/.test(item.href)
-											const extLink =
-												/^https?:\/\//.test(item.href) ||
-												item.href.startsWith('//')
+											const extLink = /^https?:\/\//.test(item.href) || item.href.startsWith('//')
 											return (
 												<li key={item.label}>
 													<Link
 														href={item.href}
-														target={
-															extLink || llmsLink ? '_blank' : undefined
-														}
+														target={extLink || llmsLink ? '_blank' : undefined}
 														prefetch={llmsLink ? false : 'auto'}
 														className='group wrap-break-word text-sm leading-snug hover:text-fd-primary transition-colors'>
 														{item.label}
