@@ -7,7 +7,7 @@ R+B 玩机乐园 作为群员数万的大家庭，目前有如下官群
 
 <Callout>部分群因为群员饱和而添加了加入限制，请更换其他群加入！</Callout>
 
-<Callout type='idea'>[**OOM 交流渠道**](https://oom-wg.dev/join)</Callout>
+<Callout type='idea'>[**回忆溢出工作组开发者交流渠道**](https://oom-wg.dev/join)</Callout>
 
 import {Megaphone, Users} from 'lucide-react'
 
@@ -43,21 +43,21 @@ import {Megaphone, Users} from 'lucide-react'
 			{num: 550449917, suffix: 'CFIy9izmiA'},
 			{num: 996362213, suffix: 'h8XYkurEIM'},
 			{num: 1040912380, suffix: '2UkaQdyzMs'}
-		].map((group, index) => ({
-			title: `${index + 1} 群`,
-			desc: (
-				<span>
-					群号: <strong>{group.num}</strong>
-				</span>
-			),
-			href: `https://qm.qq.com/q/${group.suffix}`,
-			icon: <Users />
-		}))
-	]
-		.reverse()
-		.map(info => (
-			<Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
-				{info.desc}
-			</Card>
-		))}
+		]
+			.map((group, index) => ({
+				title: `${index + 1} 群`,
+				desc: (
+					<span>
+						群号: <strong>{group.num}</strong>
+					</span>
+				),
+				href: `https://qm.qq.com/q/${group.suffix}`,
+				icon: <Users />
+			}))
+			.reverse()
+	].map(info => (
+		<Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
+			{info.desc}
+		</Card>
+	))}
 </Cards>
