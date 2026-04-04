@@ -24,18 +24,18 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
 	const components = getMDXWidgets({a: createRelativeLink(source, page)})
 
-	const info = page.data.type !== ('docs' as const) ? page.data.getAPIPageProps().operations![0] : null
+	const info = page.data.type !== 'docs' ? page.data.getAPIPageProps().operations![0] : null
 
 	return (
 		<DocsPage
 			toc={page.data.toc}
-			full={page.data.type === ('docs' as const) && page.data.full}
+			full={page.data.type === 'docs' && page.data.full}
 			footer={{
 				enabled: true,
 				component: (
 					<footer className='mt-16 text-fd-muted-foreground'>
 						<hr />
-						{page.data.type === ('docs' as const) && page.data.lastModified && (
+						{page.data.type === 'docs' && page.data.lastModified && (
 							<div className='px-6 pt-8 text-xs italic border-b-0'>
 								<PageLastUpdate date={page.data.lastModified} />
 							</div>
@@ -108,8 +108,8 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 				/>
 			</div>
 			<DocsBody>
-				{page.data.type === ('docs' as const) && <page.data.body components={components} />}
-				{page.data.type !== ('docs' as const) && (
+				{page.data.type === 'docs' && <page.data.body components={components} />}
+				{page.data.type !== 'docs' && (
 					<APIPage
 						components={components}
 						{...Object.fromEntries(
@@ -137,7 +137,7 @@ export const generateMetadata = async (props: PageProps<'/[[...slug]]'>) => {
 		alternates: {canonical: page.url || '/'},
 		title: titleConfig,
 		description: page.data.description,
-		keywords: page.data.type === ('docs' as const) ? page.data.keywords : null,
+		keywords: page.data.type === 'docs' ? page.data.keywords : null,
 		openGraph: {
 			title: titleConfig,
 			description: page.data.description,

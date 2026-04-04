@@ -1,8 +1,12 @@
 * text=auto
 
-*.config.*js linguist-vendored
-*.config.*ts linguist-vendored
-source.ts* linguist-vendored
+*.config.js linguist-vendored
+*.config.[cm]js linguist-vendored
+*.config.ts linguist-vendored
+*.config.[cm]ts linguist-vendored
+
+source.ts linguist-vendored
+source.tsx linguist-vendored
 
 *.md text eol=lf linguist-documentation
 *.mkd text eol=lf linguist-documentation

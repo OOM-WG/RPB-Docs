@@ -9,8 +9,8 @@ export default () =>
 		page =>
 			({
 				url: `${docsConfig.baseUrl}${page.url}`,
-				lastModified: (page.data.type === ('docs' as const) ? page.data.lastModified : null) ?? new Date(),
-				changeFrequency: 'always' as const,
+				lastModified: (page.data.type === 'docs' ? page.data.lastModified : null) ?? new Date(),
+				changeFrequency: 'always',
 				priority: page.url === '/' ? 1 : 0.88
 			}) satisfies MetadataRoute.Sitemap[number]
 	) satisfies MetadataRoute.Sitemap
