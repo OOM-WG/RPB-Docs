@@ -93,15 +93,6 @@ export const docsConfig = {
 					白彩恋
 				</Link>
 				，版权所有，保留一切权利。
-				<br />
-				本网页使用 <i>Clarity</i>、<i>Cloudflare Web Analytics</i> 监控流量，详见{' '}
-				<Link href='https://clarity.microsoft.com/terms' target='_blank' rel='noopener noreferrer'>
-					Clarity 使用条款
-				</Link>
-				、
-				<Link href='https://www.cloudflare.com/privacypolicy/' target='_blank' rel='noopener noreferrer'>
-					Cloudflare Web Analytics
-				</Link>
 			</span>
 		)
 	} satisfies {
