@@ -1,6 +1,6 @@
-import {Callout} from 'fumadocs-ui/components/callout'
+import { Callout } from 'fumadocs-ui/components/callout'
 
-export default ({opt}: {opt: string}) => (
+export default ({ opt }: { opt: string }) => (
 	<>
 		<Callout type='idea'>
 			已经开启过 <code>开发者模式</code> 和 <code>{opt}</code> 的不需要重复开启！

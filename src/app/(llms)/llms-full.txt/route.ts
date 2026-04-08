@@ -1,11 +1,11 @@
-import {NextResponse} from 'next/server'
+import { NextResponse } from 'next/server'
 
-import {source} from '@/lib/source'
-import {getLLMText} from '@/utils/llms'
+import { source } from '@/lib/source'
+import { getLLMText } from '@/utils/llms'
 
 export const revalidate = false
 
 export const GET = async () =>
 	new NextResponse((await Promise.all(source.getPages().map(getLLMText))).join('\n\n'), {
-		headers: {'Content-Type': 'text/markdown; charset=utf-8'}
+		headers: { 'Content-Type': 'text/markdown; charset=utf-8' },
 	})

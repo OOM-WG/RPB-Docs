@@ -35,61 +35,61 @@ props.unlock &&
 
 }
 
-import {LockKeyholeOpen, PackageOpen, ShieldCheck} from 'lucide-react'
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
 
 {!props.cnName && <>
 
 <hr />
 
 <span>
-	请先加入{' '}
-	<Link href='/qq' target='_blank'>
-		QQ 群
-	</Link>
-	，在<strong>群公告</strong>中获取一键工具
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
 </span>
 <Callout type='idea'>
-	工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
 </Callout>
 
 <span>下载工具后，可按照如下教程继续</span>
 
 <Cards>
-	<Card
-		title='解锁设备'
-		icon={<LockKeyholeOpen />}
-		href={
-			typeof props.unlock === 'number'
-				? '/tutorial/unlock-device'
-				: props.unlock === 'kona'
-					? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
-					: null
-		}>
-		若已解锁，可跳过该部分
-		{typeof props.unlock !== 'number' && <br />}
-		{props.unlock === 'none' ? (
-			<span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
-		) : (
-			<span>
-				可以进群<strong>询问管理员</strong>获取解锁方法！
-				{props.unlock === 'kona' && (
-					<>
-						<br />
-						也可自行学习强解教程解锁！(该链接为强解教程)
-					</>
-				)}
-			</span>
-		)}
-	</Card>
-	<Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
-		ROOT 需要先解锁设备
-	</Card>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
 </Cards>
 
 <hr />
 
 <Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
-	让玩机旅程变得轻松愉快吧！
+  让玩机旅程变得轻松愉快吧！
 </Card>
 
 </>}

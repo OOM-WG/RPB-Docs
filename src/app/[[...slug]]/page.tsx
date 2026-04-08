@@ -1,15 +1,15 @@
-import {DocsBody, DocsDescription, DocsPage, DocsTitle, PageLastUpdate} from 'fumadocs-ui/layouts/docs/page'
-import {createRelativeLink} from 'fumadocs-ui/mdx'
-import {Bot, ExternalLink} from 'lucide-react'
-import type {Metadata} from 'next'
+import { DocsBody, DocsDescription, DocsPage, DocsTitle, PageLastUpdate } from 'fumadocs-ui/layouts/docs/page'
+import { createRelativeLink } from 'fumadocs-ui/mdx'
+import { Bot, ExternalLink } from 'lucide-react'
+import type { Metadata } from 'next'
 import Link from 'next/link'
-import {notFound} from 'next/navigation'
-import type {OpenAPIV3_1} from 'openapi-types'
+import { notFound } from 'next/navigation'
+import type { OpenAPIV3_1 } from 'openapi-types'
 
-import {getMDXWidgets} from '@/lib/mdx'
-import {docsConfig, source} from '@/lib/source'
-import {getPageImage} from '@/utils/img'
-import {LLMCopyButton, ViewOptions} from '@/widgets/ui/ai-buttons'
+import { getMDXWidgets } from '@/lib/mdx'
+import { docsConfig, source } from '@/lib/source'
+import { getPageImage } from '@/utils/img'
+import { LLMCopyButton, ViewOptions } from '@/widgets/ui/ai-buttons'
 
 import APIPage from './api-page.mdx'
 
@@ -17,12 +17,12 @@ const BUILD_TIME = new Date().toLocaleString('zh-Hant', {
 	timeZone: 'Asia/Shanghai',
 	year: 'numeric',
 	month: '2-digit',
-	day: '2-digit'
+	day: '2-digit',
 })
 
 export default async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
-	const components = getMDXWidgets({a: createRelativeLink(source, page)})
+	const components = getMDXWidgets({ a: createRelativeLink(source, page) })
 
 	const info = page.data.type !== 'docs' ? page.data.getAPIPageProps().operations![0] : null
 
@@ -48,14 +48,14 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 									items: [
 										{
 											label: 'llms.txt',
-											href: '/llms.txt'
+											href: '/llms.txt',
 										},
 										{
 											label: 'llms-full.txt',
-											href: '/llms-full.txt'
-										}
-									]
-								}
+											href: '/llms-full.txt',
+										},
+									],
+								},
 							].map(group => (
 								<div key={group.title} className='flex-1 min-w-37.5 flex flex-col gap-3'>
 									<h4 className='font-semibold text-fd-foreground'>{group.title}</h4>
@@ -96,7 +96,7 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 							</p>
 						</div>
 					</footer>
-				)
+				),
 			}}>
 			<DocsTitle>{page.data.title}</DocsTitle>
 			<DocsDescription className='mb-0'>{page.data.description}</DocsDescription>
@@ -117,7 +117,7 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 								.getSchema()
 								.dereferenced.paths![
 									info!.path
-								]![info!.method.toLowerCase() as OpenAPIV3_1.HttpMethods]!.parameters!.map(param => [param.name, param.example])
+								]![info!.method.toLowerCase() as OpenAPIV3_1.HttpMethods]!.parameters!.map(param => [param.name, param.example]),
 						)}
 					/>
 				)}
@@ -126,15 +126,15 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 	)
 }
 
-export const generateStaticParams = async () => source.generateParams()
+export const generateStaticParams = () => source.generateParams()
 
 export const generateMetadata = async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
 
-	const titleConfig = page.url === '/' ? {absolute: docsConfig.title} : page.data.title
+	const titleConfig = page.url === '/' ? { absolute: docsConfig.title } : page.data.title
 
 	return {
-		alternates: {canonical: page.url || '/'},
+		alternates: { canonical: page.url || '/' },
 		title: titleConfig,
 		description: page.data.description,
 		keywords: page.data.type === 'docs' ? page.data.keywords : null,
@@ -142,12 +142,12 @@ export const generateMetadata = async (props: PageProps<'/[[...slug]]'>) => {
 			title: titleConfig,
 			description: page.data.description,
 			url: `${docsConfig.baseUrl}${page.url}`,
-			images: getPageImage(page).url
+			images: getPageImage(page).url,
 		},
 		twitter: {
 			title: titleConfig,
 			description: page.data.description,
-			images: getPageImage(page).url
-		}
+			images: getPageImage(page).url,
+		},
 	} satisfies Metadata
 }
