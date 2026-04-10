@@ -21,7 +21,7 @@ import { Megaphone, Users } from 'lucide-react'
         </span>
       ),
       href: 'https://pd.qq.com/s/4fjygi85',
-      icon: <Megaphone />,
+      icon: <Megaphone />
     },
     ...[
       { num: 578704024, suffix: 'U4PXfPBYg6' },
@@ -42,7 +42,7 @@ import { Megaphone, Users } from 'lucide-react'
       { num: 1027943503, suffix: 'H3Fr8IsFsO' },
       { num: 550449917, suffix: 'CFIy9izmiA' },
       { num: 996362213, suffix: 'h8XYkurEIM' },
-      { num: 1040912380, suffix: '2UkaQdyzMs' },
+      { num: 1040912380, suffix: '2UkaQdyzMs' }
     ]
       .map((group, index) => ({
         title: `${index + 1} 群`,
@@ -52,9 +52,9 @@ import { Megaphone, Users } from 'lucide-react'
           </span>
         ),
         href: `https://qm.qq.com/q/${group.suffix}`,
-        icon: <Users />,
+        icon: <Users />
       }))
-      .reverse(),
+      .reverse()
   ].map(info => (
     <Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
       {info.desc}

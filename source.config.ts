@@ -6,18 +6,18 @@ export const docs = defineDocs({
 	dir: 'content',
 	docs: {
 		schema: frontmatterSchema.extend({
-			keywords: z.array(z.string()).optional(),
+			keywords: z.array(z.string()).optional()
 		}),
 		postprocess: {
-			includeProcessedMarkdown: true,
-		},
+			includeProcessedMarkdown: true
+		}
 	},
 	meta: {
-		schema: metaSchema,
-	},
+		schema: metaSchema
+	}
 })
 
 export default defineConfig({
 	plugins: [lastModified()],
-	mdxOptions: {},
+	mdxOptions: {}
 })
