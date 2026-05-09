@@ -1,20 +1,17 @@
-import { defineConfig, defineDocs, frontmatterSchema, metaSchema } from 'fumadocs-mdx/config'
+import { metaSchema, pageSchema } from 'fumadocs-core/source/schema'
+import { defineConfig, defineDocs } from 'fumadocs-mdx/config'
 import lastModified from 'fumadocs-mdx/plugins/last-modified'
 import { z } from 'zod'
 
 export const docs = defineDocs({
 	dir: 'content',
 	docs: {
-		schema: frontmatterSchema.extend({
+		schema: pageSchema.extend({
 			keywords: z.array(z.string()).optional()
 		}),
-		postprocess: {
-			includeProcessedMarkdown: true
-		}
+		postprocess: { includeProcessedMarkdown: true }
 	},
-	meta: {
-		schema: metaSchema
-	}
+	meta: { schema: metaSchema }
 })
 
 export default defineConfig({

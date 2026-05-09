@@ -1,4 +1,4 @@
-import { type Source, loader, multiple } from 'fumadocs-core/source'
+import { type Source, loader } from 'fumadocs-core/source'
 import { lucideIconsPlugin } from 'fumadocs-core/source/lucide-icons'
 import { docs } from 'fumadocs-mdx:collections/server'
 import { createOpenAPI, openapiPlugin, openapiSource } from 'fumadocs-openapi/server'
@@ -377,12 +377,12 @@ const seriesSource = [
 )
 
 export const source = loader(
-	multiple({
+	{
 		docs: docs.toFumadocsSource(),
 
 		gt: seriesSource[0]!,
 		neo: seriesSource[1]!
-	}),
+	},
 	{
 		baseUrl: '/',
 		plugins: [lucideIconsPlugin(), openapiPlugin()]
