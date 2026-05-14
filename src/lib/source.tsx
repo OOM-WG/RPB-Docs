@@ -78,6 +78,10 @@ export const docsConfig = {
 					{
 						label: '回忆溢出工作组',
 						href: 'https://oom-wg.dev'
+					},
+					{
+						label: '200OK Working',
+						href: 'https://200ok.work'
 					}
 				]
 			}
