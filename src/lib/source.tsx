@@ -371,8 +371,7 @@ const seriesSource = [
 	src => (
 		(src.files = src.files.map(
 			file => (
-				file.type === 'page' &&
-					(file.path = file.path.replace(/[\\/](get|post|put|delete|patch|options|head)\.mdx$/, '.mdx')),
+				file.type === 'page' && (file.path = file.path.replace(/[\\/](get|post|put|delete|patch|options|head)\.mdx$/, '.mdx')),
 				file
 			)
 		)),

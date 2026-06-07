@@ -23,9 +23,5 @@ export const GET = async (_req: NextRequest, { params }: RouteContext<'/llms.md/
 
 export const generateStaticParams = () =>
 	source.getPages().map(page => ({
-		slug: [
-			...(page.slugs.length === 0
-				? ['index.md']
-				: [...page.slugs.slice(0, -1), `${page.slugs[page.slugs.length - 1]}.md`])
-		]
+		slug: page.slugs.length === 0 ? ['index.md'] : [...page.slugs.slice(0, -1), `${page.slugs[page.slugs.length - 1]}.md`]
 	}))
