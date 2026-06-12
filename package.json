@@ -2,7 +2,7 @@
 	"name": "rpb-docs",
 	"private": true,
 	"description": "RPB Docs",
-	"license": "F2DLPRL",
+	"license": "File-to-Downloader",
 	"author": "ShIroRRen",
 	"type": "module",
 	"scripts": {
