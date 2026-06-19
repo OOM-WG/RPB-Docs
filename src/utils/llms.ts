@@ -14,9 +14,9 @@ export const getLLMText = async (page: InferPageType<typeof source>) =>
 					Object.fromEntries(
 						page.data
 							.getSchema()
-							.dereferenced.paths![page.data.getAPIPageProps().operations![0]!.path]![
-								page.data.getAPIPageProps().operations![0]!.method.toLowerCase() as OpenAPIV3_1.HttpMethods
-							]!.parameters!.map(param => [param.name, param.example])
+							.bundled.paths![page.data.getOpenAPIPageProps().operations![0]!.path]![
+								page.data.getOpenAPIPageProps().operations![0]!.method.toLowerCase() as OpenAPIV3_1.HttpMethods
+							]!.parameters!.map(param => (param => [param.name, param.example])(param as OpenAPIV3_1.ParameterObject))
 					)
 				)}\n\n` + fs.readFileSync(path.join(process.cwd(), 'src/app/[[...slug]]/api-page.mdx'))
 	}`

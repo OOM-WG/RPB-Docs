@@ -24,7 +24,7 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 	const page = source.getPage((await props.params).slug) ?? notFound()
 	const components = getMDXWidgets({ a: createRelativeLink(source, page) })
 
-	const info = page.type !== 'docs' ? page.data.getAPIPageProps().operations![0] : null
+	const info = page.type !== 'docs' ? page.data.getOpenAPIPageProps().operations![0] : null
 
 	return (
 		<DocsPage
@@ -115,8 +115,8 @@ export default async (props: PageProps<'/[[...slug]]'>) => {
 						{...Object.fromEntries(
 							page.data
 								.getSchema()
-								.dereferenced.paths![info!.path]![info!.method.toLowerCase() as OpenAPIV3_1.HttpMethods]!.parameters!.map(
-									param => [param.name, param.example]
+								.bundled.paths![info!.path]![info!.method.toLowerCase() as OpenAPIV3_1.HttpMethods]!.parameters!.map(param =>
+									(param => [param.name, param.example])(param as OpenAPIV3_1.ParameterObject)
 								)
 						)}
 					/>

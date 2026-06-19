@@ -227,7 +227,7 @@ const defineInfo = (
 	return defineDocs(docsInput)
 }
 
-export const gtConfig = (cfg => createOpenAPI({ input: () => ({ gt: defineInfo(cfg) }) }))({
+export const gtConfig = (cfg => createOpenAPI({ input: { gt: defineInfo(cfg) } }))({
 	RMX2086: {
 		name: 'X3 超级变焦版',
 		values: { cnName: 'none' }
@@ -293,7 +293,7 @@ export const gtConfig = (cfg => createOpenAPI({ input: () => ({ gt: defineInfo(c
 		values: { ramdisk: 'init_boot', unlock: 7 }
 	}
 })
-export const neoConfig = (cfg => createOpenAPI({ input: () => ({ neo: defineInfo(cfg) }) }))({
+export const neoConfig = (cfg => createOpenAPI({ input: { neo: defineInfo(cfg) } }))({
 	RMX3031: {
 		name: 'GT Neo',
 		values: { glName: 'realme X7 Max', ramdisk: 'boot', unlock: 'mt6893' }
