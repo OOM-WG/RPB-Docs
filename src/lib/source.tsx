@@ -43,7 +43,7 @@ export const docsConfig = {
 				title: '玩机资源',
 				items: [
 					{
-						label: '升/降级包',
+						label: '升级&降级包',
 						href: 'https://latestfile.zip/system/gt-neo'
 					},
 					{
