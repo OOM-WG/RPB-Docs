@@ -1,0 +1,80 @@
+# [QQ 群](https://root.oom-wg.dev/qq)
+
+> R+B 玩机乐园 官方 Q 群
+
+R+B 玩机乐园 作为群员数万的大家庭，目前有如下官群
+
+<Callout type="success">
+  **解锁 ROOT 工具**
+
+   请在下方的 
+
+  **真我 GT/Neo 系列**
+
+   群聊中下载！
+</Callout>
+
+<Callout>
+  部分群因为群员饱和而添加了加入限制，请更换其他群加入！
+</Callout>
+
+<Callout type="idea">
+  **回忆溢出工作组[开发者交流渠道](https://oom-wg.dev/join)**
+</Callout>
+
+
+
+<Cards>
+  {[
+      {
+        title: '频道',
+        desc: (
+          <span>
+            频道号: <strong>cl3s3gt59x</strong>
+          </span>
+        ),
+        href: 'https://pd.qq.com/s/4fjygi85',
+        icon: <Megaphone />
+      },
+      ...[
+        { num: 578704024, suffix: 'U4PXfPBYg6' },
+        { num: 729097450, suffix: 'fscb2LERR8' },
+        { num: 780894120, suffix: 'xs0obwELN6' },
+        { num: 144218223, suffix: 'ZDftuDzLuA' },
+        { num: 613471535, suffix: 'CD1BmL0lEc' },
+        { num: 257023246, suffix: '3rnzTBmdW' },
+        { num: 742266839, suffix: 'hdXFq3ilVu' },
+        { num: 774749758, suffix: 'c7FMFPTteM' },
+        { num: 926433454, suffix: 'dnP4Sv4aqs' },
+        { num: 240331782, suffix: 'oaFZIastaw' },
+        { num: 731779750, suffix: '1GKMXjuJrC' },
+        { num: 766944164, suffix: 'BGdHd2GTwO' },
+        { num: 650170043, suffix: 'usNMnbwI6c' },
+        { num: 789887270, suffix: '11XQL1lETu' },
+        { num: 593224629, suffix: 'Qugf5iVBSy' },
+        { num: 1027943503, suffix: 'H3Fr8IsFsO' },
+        { num: 550449917, suffix: 'CFIy9izmiA' },
+        { num: 996362213, suffix: 'h8XYkurEIM' },
+        { num: 1040912380, suffix: '2UkaQdyzMs' }
+      ]
+        .map((group, index) => ({
+          title: `${index + 1} 群`,
+          desc: (
+            <span>
+              群号: <strong>{group.num}</strong>
+            </span>
+          ),
+          href: `https://qm.qq.com/q/${group.suffix}`,
+          icon: <Users />
+        }))
+        .reverse()
+    ].map(info => (
+      <Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
+        {info.desc}
+      </Card>
+    ))}
+</Cards>
+
+---
+
+> [**Page Index**] <https://root.oom-wg.dev/llms.txt> | [**Full Content**] <https://root.oom-wg.dev/llms-full.txt>

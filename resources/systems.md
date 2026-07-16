@@ -1,0 +1,19 @@
+# [系统资源](https://root.oom-wg.dev/resources/systems)
+
+## 官方升级&降级包 [#官方升级降级包]
+
+[Latest File](https://latestfile.zip/system/gt-neo) 收录了官方发布的所有回退/升级系统包，
+如果因为当前 UI 大版本不支持解锁等问题而需要刷机，可以从此寻找系统包
+
+<Callout>
+  使用官方系统包不需要解锁/ROOT，但是由于仅收录了回退/升级系统包，部分机型还暂无系统包
+</Callout>
+
+## 线刷包 [#线刷包]
+
+R+B 玩机乐园 提供了[付费系统包购买地址](https://realme.gtrom.eu.org/)，系统包均由 酷安@小帅当然帅 制作，
+适用于 `救砖`、`升/降级` 等用途，稳定有效，实惠好用
+
+---
+
+> [**Page Index**] <https://root.oom-wg.dev/llms.txt> | [**Full Content**] <https://root.oom-wg.dev/llms-full.txt>

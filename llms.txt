@@ -1,0 +1,74 @@
+# [R+B 玩机教程站](https://root.oom-wg.dev)
+
+## Navigation
+
+- **ROOT 教程**
+  - [GT 系列](https://root.oom-wg.dev/series/gt)
+  - [Neo 系列](https://root.oom-wg.dev/series/neo)
+- [**QQ 群**](https://root.oom-wg.dev/qq): 获取免费工具箱资源请加群
+
+## Pages
+
+- [**速通 ROOT 就此开始！**](https://root.oom-wg.dev/index.md): 真我 GT & Neo 系列 解锁 & root 教程
+- [**QQ 群**](https://root.oom-wg.dev/qq.md): R+B 玩机乐园 官方 Q 群
+- [**一键工具 ROOT 教程**](https://root.oom-wg.dev/tutorial/root-device.md): 真我 GT & Neo 系列 root 教程
+- [**深度测试解锁教程**](https://root.oom-wg.dev/tutorial/unlock-device.md): 真我 GT & Neo 系列 解锁教程
+- [**玩机资源**](https://root.oom-wg.dev/resources.md): 让玩机旅程变得轻松愉快吧！
+- [**模块资源**](https://root.oom-wg.dev/resources/modules.md)
+- [**系统资源**](https://root.oom-wg.dev/resources/systems.md)
+- [**真我 GT 系列**](https://root.oom-wg.dev/series/gt.md): 真我 GT 系列 解锁 & root 教程
+- [**真我 Neo 系列**](https://root.oom-wg.dev/series/neo.md): 真我 Neo 系列 解锁 & root 教程
+- [**真我 X3 超级变焦版**](https://root.oom-wg.dev/series/gt/rmx2086.md): 真我 X3 超级变焦版 解锁 & ROOT 教程
+- [**真我 GT**](https://root.oom-wg.dev/series/gt/rmx2202.md): 真我 GT 解锁 & ROOT 教程
+- [**真我 GT 大师版**](https://root.oom-wg.dev/series/gt/rmx3361.md): 真我 GT 大师版 解锁 & ROOT 教程
+- [**真我 GT 大师探索版**](https://root.oom-wg.dev/series/gt/rmx3366.md): 真我 GT 大师探索版 解锁 & ROOT 教程
+- [**真我 GT2**](https://root.oom-wg.dev/series/gt/rmx3310.md): 真我 GT2 解锁 & ROOT 教程
+- [**真我 GT2 Pro**](https://root.oom-wg.dev/series/gt/rmx3300.md): 真我 GT2 Pro 解锁 & ROOT 教程
+- [**真我 GT2 大师探索版**](https://root.oom-wg.dev/series/gt/rmx3551.md): 真我 GT2 大师探索版 解锁 & ROOT 教程
+- [**真我 GT5 150W**](https://root.oom-wg.dev/series/gt/rmx3820.md): 真我 GT5 150W 解锁 & ROOT 教程
+- [**真我 GT5 240W**](https://root.oom-wg.dev/series/gt/rmx3823.md): 真我 GT5 240W 解锁 & ROOT 教程
+- [**真我 GT5 Pro**](https://root.oom-wg.dev/series/gt/rmx3888.md): 真我 GT5 Pro 解锁 & ROOT 教程
+- [**真我 GT6**](https://root.oom-wg.dev/series/gt/rmx3800.md): 真我 GT6 解锁 & ROOT 教程
+- [**真我 GT7 Pro**](https://root.oom-wg.dev/series/gt/rmx5010.md): 真我 GT7 Pro 解锁 & ROOT 教程
+- [**真我 GT7 Pro 竞速版**](https://root.oom-wg.dev/series/gt/rmx5090.md): 真我 GT7 Pro 竞速版 解锁 & ROOT 教程
+- [**真我 GT7 & GT7 阿斯顿马丁F1限量版**](https://root.oom-wg.dev/series/gt/rmx6688.md): 真我 GT7 & GT7 阿斯顿马丁F1限量版 解锁 & ROOT 教程
+- [**真我 GT8**](https://root.oom-wg.dev/series/gt/rmx6699.md): 真我 GT8 解锁 & ROOT 教程
+- [**真我 GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版**](https://root.oom-wg.dev/series/gt/rmx5200.md): 真我 GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版 解锁 & ROOT 教程
+- [**真我 GT Neo**](https://root.oom-wg.dev/series/neo/rmx3031.md): 真我 GT Neo 解锁 & ROOT 教程
+- [**真我 GT Neo 闪速版**](https://root.oom-wg.dev/series/neo/rmx3350.md): 真我 GT Neo 闪速版 解锁 & ROOT 教程
+- [**真我 GT Neo2 & GT Neo2 龙珠定制版**](https://root.oom-wg.dev/series/neo/rmx3370.md): 真我 GT Neo2 & GT Neo2 龙珠定制版 解锁 & ROOT 教程
+- [**真我 GT Neo2T**](https://root.oom-wg.dev/series/neo/rmx3357.md): 真我 GT Neo2T 解锁 & ROOT 教程
+- [**真我 GT Neo3 80W**](https://root.oom-wg.dev/series/neo/rmx3560.md): 真我 GT Neo3 80W 解锁 & ROOT 教程
+- [**真我 GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版**](https://root.oom-wg.dev/series/neo/rmx3562.md): 真我 GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版 解锁 & ROOT 教程
+- [**真我 GT Neo3T**](https://root.oom-wg.dev/series/neo/rmx3371.md): 真我 GT Neo3T 解锁 & ROOT 教程
+- [**真我 GT Neo5 SE**](https://root.oom-wg.dev/series/neo/rmx3700.md): 真我 GT Neo5 SE 解锁 & ROOT 教程
+- [**真我 GT Neo5 150W**](https://root.oom-wg.dev/series/neo/rmx3706.md): 真我 GT Neo5 150W 解锁 & ROOT 教程
+- [**真我 GT Neo5 240W**](https://root.oom-wg.dev/series/neo/rmx3708.md): 真我 GT Neo5 240W 解锁 & ROOT 教程
+- [**真我 GT Neo6 SE**](https://root.oom-wg.dev/series/neo/rmx3850.md): 真我 GT Neo6 SE 解锁 & ROOT 教程
+- [**真我 GT Neo6**](https://root.oom-wg.dev/series/neo/rmx3852.md): 真我 GT Neo6 解锁 & ROOT 教程
+- [**真我 Neo7 & Neo7 不良人限定版**](https://root.oom-wg.dev/series/neo/rmx5060.md): 真我 Neo7 & Neo7 不良人限定版 解锁 & ROOT 教程
+- [**真我 Neo7x**](https://root.oom-wg.dev/series/neo/rmx5071.md): 真我 Neo7x 解锁 & ROOT 教程
+- [**真我 Neo7 SE**](https://root.oom-wg.dev/series/neo/rmx5080.md): 真我 Neo7 SE 解锁 & ROOT 教程
+- [**真我 Neo7 Turbo**](https://root.oom-wg.dev/series/neo/rmx5062.md): 真我 Neo7 Turbo 解锁 & ROOT 教程
+- [**真我 Neo8**](https://root.oom-wg.dev/series/neo/rmx8899.md): 真我 Neo8 解锁 & ROOT 教程
+
+## Links
+
+- **ROOT 教程**
+  - [GT 系列](/series/gt)
+  - [Neo 系列](/series/neo)
+- **玩机资源**
+  - [升级&降级包](https://latestfile.zip/system/gt-neo)
+  - [优质模块](https://latestfile.zip/module)
+  - [多功能软件](https://shirosu.gal.tf/utils)
+  - [便用 ROOT 管理器](https://shirosu.gal.tf/compat)
+  - [ROM 购买站](https://realme.gtrom.eu.org/)
+- **友链**
+  - [广告](https://ja7.gal.tf/ad)
+  - [Latest File](https://latestfile.zip)
+  - [回忆溢出工作组](https://oom-wg.dev)
+  - [200OK Working](https://200ok.work)
+
+---
+
+> [**Full Content**](https://root.oom-wg.dev/llms-full.txt): All pages in single file

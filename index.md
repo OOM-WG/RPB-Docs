@@ -1,0 +1,36 @@
+# [速通 ROOT 就此开始！](https://root.oom-wg.dev/)
+
+> 真我 GT & Neo 系列 解锁 & root 教程
+
+解锁刷机，一气呵成！用方便的一键工具来探索刷机的奇妙世界吧！
+
+> 一键工具由 [酷安@小帅当然帅](https://www.coolapk.com/u/5970992) 制作，
+> 本站所有内容由 [白彩恋](https://shiror.ren/)([酷安@白彩恋](https://www.coolapk.com/u/18208176)) 编写
+>
+> 一键工具<mark>**长期免费更新**</mark>，切勿上当受骗！
+>
+> 部分内容来自真我官方发布
+
+
+
+<Cards>
+  <Card title="GT 系列" icon="<Vibrate />" href="/series/gt">
+    从 初代 GT 到 最新的 GT8 &#x2A;(Pro)*
+  </Card>
+
+  <Card title="Neo 系列" icon="<SmartphoneCharging />" href="/series/neo">
+    从 初代 GT Neo 到 最新的 Neo8
+  </Card>
+</Cards>
+
+<Callout type="idea">
+  看之前不妨先
+
+  **去酷安点个关注**
+
+  ！
+</Callout>
+
+---
+
+> [**Page Index**] <https://root.oom-wg.dev/llms.txt> | [**Full Content**] <https://root.oom-wg.dev/llms-full.txt>

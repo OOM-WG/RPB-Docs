@@ -1,0 +1,3961 @@
+# [速通 ROOT 就此开始！](https://root.oom-wg.dev/)
+
+> 真我 GT & Neo 系列 解锁 & root 教程
+
+解锁刷机，一气呵成！用方便的一键工具来探索刷机的奇妙世界吧！
+
+> 一键工具由 [酷安@小帅当然帅](https://www.coolapk.com/u/5970992) 制作，
+> 本站所有内容由 [白彩恋](https://shiror.ren/)([酷安@白彩恋](https://www.coolapk.com/u/18208176)) 编写
+>
+> 一键工具<mark>**长期免费更新**</mark>，切勿上当受骗！
+>
+> 部分内容来自真我官方发布
+
+
+
+<Cards>
+  <Card title="GT 系列" icon="<Vibrate />" href="/series/gt">
+    从 初代 GT 到 最新的 GT8 &#x2A;(Pro)*
+  </Card>
+
+  <Card title="Neo 系列" icon="<SmartphoneCharging />" href="/series/neo">
+    从 初代 GT Neo 到 最新的 Neo8
+  </Card>
+</Cards>
+
+<Callout type="idea">
+  看之前不妨先
+
+  **去酷安点个关注**
+
+  ！
+</Callout>
+
+
+# [QQ 群](https://root.oom-wg.dev/qq)
+
+> R+B 玩机乐园 官方 Q 群
+
+R+B 玩机乐园 作为群员数万的大家庭，目前有如下官群
+
+<Callout type="success">
+  **解锁 ROOT 工具**
+
+   请在下方的 
+
+  **真我 GT/Neo 系列**
+
+   群聊中下载！
+</Callout>
+
+<Callout>
+  部分群因为群员饱和而添加了加入限制，请更换其他群加入！
+</Callout>
+
+<Callout type="idea">
+  **回忆溢出工作组[开发者交流渠道](https://oom-wg.dev/join)**
+</Callout>
+
+
+
+<Cards>
+  {[
+      {
+        title: '频道',
+        desc: (
+          <span>
+            频道号: <strong>cl3s3gt59x</strong>
+          </span>
+        ),
+        href: 'https://pd.qq.com/s/4fjygi85',
+        icon: <Megaphone />
+      },
+      ...[
+        { num: 578704024, suffix: 'U4PXfPBYg6' },
+        { num: 729097450, suffix: 'fscb2LERR8' },
+        { num: 780894120, suffix: 'xs0obwELN6' },
+        { num: 144218223, suffix: 'ZDftuDzLuA' },
+        { num: 613471535, suffix: 'CD1BmL0lEc' },
+        { num: 257023246, suffix: '3rnzTBmdW' },
+        { num: 742266839, suffix: 'hdXFq3ilVu' },
+        { num: 774749758, suffix: 'c7FMFPTteM' },
+        { num: 926433454, suffix: 'dnP4Sv4aqs' },
+        { num: 240331782, suffix: 'oaFZIastaw' },
+        { num: 731779750, suffix: '1GKMXjuJrC' },
+        { num: 766944164, suffix: 'BGdHd2GTwO' },
+        { num: 650170043, suffix: 'usNMnbwI6c' },
+        { num: 789887270, suffix: '11XQL1lETu' },
+        { num: 593224629, suffix: 'Qugf5iVBSy' },
+        { num: 1027943503, suffix: 'H3Fr8IsFsO' },
+        { num: 550449917, suffix: 'CFIy9izmiA' },
+        { num: 996362213, suffix: 'h8XYkurEIM' },
+        { num: 1040912380, suffix: '2UkaQdyzMs' }
+      ]
+        .map((group, index) => ({
+          title: `${index + 1} 群`,
+          desc: (
+            <span>
+              群号: <strong>{group.num}</strong>
+            </span>
+          ),
+          href: `https://qm.qq.com/q/${group.suffix}`,
+          icon: <Users />
+        }))
+        .reverse()
+    ].map(info => (
+      <Card title={info.title} icon={info.icon} href={info.href} key={info.title}>
+        {info.desc}
+      </Card>
+    ))}
+</Cards>
+
+
+# [一键工具 ROOT 教程](https://root.oom-wg.dev/tutorial/root-device)
+
+> 真我 GT & Neo 系列 root 教程
+
+
+
+
+
+
+
+
+
+
+
+<Callout type="idea">
+  若未解锁，请先按照
+
+  [解锁教程](unlock)
+
+  解锁！
+</Callout>
+
+## 准备工作 [#准备工作]
+
+### 硬件准备 [#硬件准备]
+
+解锁需要以下硬件支持:
+
+* 支持数据传输的 USB 数据线（`C to A` 或 `C to C` 皆可，请按照自己的实际情况选择）
+* 电脑（推荐使用 Windows 系统的电脑，本教程不适用于 Linux 或 MacOS 等系统）
+
+<Callout type="idea">
+  使用支持 OTG 的 Android 设备也可以刷机，但本教程不在此过多赘述！
+</Callout>
+
+<Callout type="warn">
+  务必保证数据线与电脑的 USB 接口都可以正常传输数据！
+
+  <>  </>
+
+  使用低质数据线连接设备，会在进入 `BootLoader` 模式时电脑无法正确识别设备！
+</Callout>
+
+#### 开启 USB 调试 [#开启-usb-调试]
+
+
+
+<DevMode opt="USB 调试" />
+
+## 刷入 ROOT [#刷入-root]
+
+### 通过 ShiroSU 在线 root [#通过-shirosu-在线-root]
+
+[**ShiroSU NT**](https://shirosu.gal.tf/newtech) 是新一代 root 实现，
+与其他多数 root 不同，它通过**网页管理 root**，同时也能通过**网页刷入 root**（支持 `fastboot` 刷机）
+
+对于更多信息，参见 [**ShiroSU 官网**](https://shirosu.gal.tf/) 与 [**ShiroSU 文档**](https://oom-wg.dev/ssu)
+
+### 使用一键工具 ROOT [#使用一键工具-root]
+
+<Callout type="idea">
+  请先提前下载好 ROOT 工具
+
+  > ROOT 工具请[**加群获取**](/qq)，长期免费更新，加入后查看群公告即可
+
+  部分重复操作无需重复执行！
+</Callout>
+
+打开下载好的 ROOT 工具并解压，得到一个文件夹后，进入该文件夹
+
+<img alt="文件夹例图" src="__img0" />
+
+然后通过鼠标 **`左键` 双击** 来打开 `双击打开工具箱.exe` 程序
+
+<img alt="工具例图" src="__img1" />
+
+<Callout type="idea">
+  如果没有在资源管理器中打开&#x2A;*显示`文件拓展名`**，则不会有 `exe` 后缀，虽然不影响使用，但是建议打开！
+</Callout>
+
+<Callout>
+  例图来自于有 
+
+  `init_boot`
+
+   分区机型的 ROOT 工具，与仅有 
+
+  `boot`
+
+   分区机型略有差异，但在本教程中不影响使用！
+</Callout>
+
+<Callout>
+  如果电脑还未安装 Android 驱动，则需要执行以下操作:
+
+  > 安装过则可以省略该步骤
+
+  先输入 `1`(安装驱动) 并按 `回车键`，按照提示安装驱动，然后再返回工具箱主页
+
+    <img alt="安装例图" src="__img2" />
+</Callout>
+
+<Callout type="warn">
+  务必保证驱动正确安装！
+
+  未安装驱动或未正确安装驱动，会在进入 `BootLoader` 模式时电脑无法正确识别设备！
+</Callout>
+
+使用数据线连接设备与电脑
+
+<Callout type="idea">
+  如果是在开机状态，需要注意以下几点:
+
+  1. 如果是开启 `USB 调试` 后第一次连接电脑，会提示是否允许电脑进行 USB 调试，此时请勾选一律允许调试并确认
+  2. 如果连接电脑后提示选择连接模式，请选择 `传输文件`（即 `MTP 模式`）
+
+  如果是在关机状态，则需要同时长按 `音量-键` 与 `电源键` 以进入 `BootLoader` 模式
+</Callout>
+
+输入 `6`(刷入 ROOT) 并按 `回车键`，依照实际情况选择当前状态
+
+输入当前状态对应的数字并按 `回车键` 后，会刷入 ROOT 并自动重启
+
+<img alt="选择状态例图" src="__img3" />
+
+重启后桌面新增一个 Android 原生图标的软件（即 ROOT 自带的默认管理器），则说明刷入成功
+
+<Callout>
+  如果已经提前安装好 ROOT 管理器，则不会再出现一个新的软件， 除非安装的 ROOT 管理器与当前刷入的 ROOT
+  **不匹配**，此时仍需要再安装匹配的 ROOT 管理器
+</Callout>
+
+由于默认管理器会从 GitHub 下载完整版管理器，但是国内网络环境很难下载成功，
+因此需要再使用工具箱安装 ROOT 管理器
+
+返回工具箱主页后，输入 `3`(安装 ROOT 管理器) 并按 `回车键`
+
+<Callout>
+  设备重启后仍需要按先前教程所描述的办法来保证设备与电脑正常连接
+</Callout>
+
+<img alt="安装管理器例图" src="__img4" />
+
+通过工具箱安装时，设备会提示安装 ROOT 管理器，确认安装即可
+
+ROOT 管理器安装成功后，进入管理器，
+若提示修复运行环境，则需要确认修复，在安装选项中选择 `直接安装` 并确认，
+安装成功并重启后，便成功获取 ROOT 权限
+
+> **至此，ROOT 完毕**
+>
+> 如果想要玩得更得心应手，参见 [玩机资源](/resources)
+
+
+# [深度测试解锁教程](https://root.oom-wg.dev/tutorial/unlock-device)
+
+> 真我 GT & Neo 系列 解锁教程
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Callout type="warn">
+  停止维护的旧机型无法使用深度测试！仅可通过漏洞强行解锁！
+
+  不支持深度测试但可通过漏洞强行解锁的机型如下:
+
+  * GT Neo
+  * GT Neo 闪速版
+  * GT Neo2T
+  * GT 大师探索版
+  * GT Neo2 (以及 `龙珠定制版`)
+  * GT Neo3 80W
+  * GT Neo3 150W (以及 `火影定制版`)
+
+  完全不支持解锁的机型如下:
+
+  * GT 大师版
+
+  > [高通骁龙 865、870、8Gen2 漏洞强行解锁教程](https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550)
+</Callout>
+
+## 解锁要求 [#解锁要求]
+
+* 国行零售版设备，非政企定制版
+* 欢太账号在六十天内没有申请过解锁
+
+## 解锁名额 [#解锁名额]
+
+* GT 系列发布会后一个月第一次首次开放 **300** 名额，次月开始至停止维护**每月 1 日**释放 **200** 名额
+* 其他系列发布会后一个月第一次首次开放 **200** 名额，次月开始至停止维护**每月 1 日**释放 **200** 名额
+
+<Callout type="idea">
+  机型发布会之后可能会随缘开放首批名额！
+</Callout>
+
+## 解锁审核 [#解锁审核]
+
+申请成功后七天完成审核，解锁码的时间限制为 7 天，超过 7 天需要重新申请
+
+<Callout type="warn">
+  解锁前不可以进行 UI 大版本更新！
+
+  解锁仅可在指定的 UI 大版本下申请，如果进行了大版本更新，则会无法通过审核，需要重新降级！
+
+  > 每个机型可以解锁的 UI 大版本已在各机型页面中注明
+</Callout>
+
+<Callout>
+  部分官方信息不可信，只要申请之后不更换账号、不更新 UI 大版本，理论不会有过期限制
+</Callout>
+
+## 申请流程 [#申请流程]
+
+### 准备工作 [#准备工作]
+
+#### 硬件准备 [#硬件准备]
+
+解锁需要以下硬件支持:
+
+* 支持数据传输的 USB 数据线（`C to A` 或 `C to C` 皆可，请按照自己的实际情况选择）
+* 电脑（推荐使用 Windows 系统的电脑，本教程不适用于 Linux 或 MacOS 等系统）
+
+<Callout type="idea">
+  使用支持 OTG 的 Android 设备也可以刷机，但本教程不在此过多赘述！
+</Callout>
+
+<Callout type="warn">
+  务必保证数据线与电脑的 USB 接口都可以正常传输数据！
+
+  <>  </>
+
+  使用低质数据线连接设备，会在进入 `BootLoader` 模式时电脑无法正确识别设备！
+</Callout>
+
+#### 安装深度测试软件 [#安装深度测试软件]
+
+下载深度测试软件并安装
+
+> [官方链接](https://r11.realme.net/CN/thread-attachment/888043131025080903.zip)
+>
+> [夸克网盘链接](https://pan.quark.cn/s/c44a85260c72)
+
+<Callout type="idea">
+  官方链接下载后为 ZIP 压缩包，请在下载后解压以获取深度测试的 APK 安装包！
+
+  夸克网盘链接下载后为直接的 APK 安装包
+</Callout>
+
+#### 开启 OEM 解锁 [#开启-oem-解锁]
+
+
+
+<DevMode opt="OEM 解锁" />
+
+### 申请解锁 [#申请解锁]
+
+0. 确保未开启系统深色模式
+1. 进入 `深度测试` 软件
+2. 登录欢太账号
+3. 点击 `开始申请`，勾选 `我已阅读并同意上述内容`，然后点击 `提交申请`
+
+<Callout type="warn" title="确保申请成功">
+  返回到申请页面后，请点击 `查询审核状态` 来查看是否申请成功！
+
+  若没有申请成功，请检查是否满足要求！
+</Callout>
+
+## 解锁设备 [#解锁设备]
+
+<Callout type="warn">
+  解锁会清除设备数据！请确保重要数据都备份后再解锁！ （请备份到其他设备或云端上，不要备份到当前设备上！）
+</Callout>
+
+审核通过后，在 `深度测试` 软件中点击 `开始深度测试`，让设备重启至 `BootLoader` 模式
+
+<Callout>
+  `BootLoader`
+
+   模式 并非常规的手机页面！进入后显示的各种文字可以不用理会！
+</Callout>
+
+**BootLoader 界面**:
+
+<Tabs groupId="device" items="['联发科', '高通']">
+  <Tab>
+    <img alt="联发科 BootLoader 界面" src="__img0" />
+  </Tab>
+
+  <Tab>
+    <img alt="高通 BootLoader 界面" src="__img1" />
+  </Tab>
+</Tabs>
+
+<Callout type="warn">
+  联发科处理器机型与高通处理器机型的 BootLoader 界面并不相同！
+
+  <>  </>
+
+  并且两种机型在解锁方式上也有所差异，请确认好自己机型的处理器厂商！
+</Callout>
+
+### 使用一键工具解锁 [#使用一键工具解锁]
+
+<Callout type="idea">
+  请先提前下载好 ROOT 工具
+
+  > ROOT 工具请[**加群获取**](/qq)，长期免费更新，加入后查看群公告即可
+
+  部分重复操作无需重复执行！
+</Callout>
+
+打开下载好的 ROOT 工具并解压，得到一个文件夹后，进入该文件夹
+
+<img alt="文件夹例图" src="__img2" />
+
+然后通过鼠标 **`左键` 双击** 来打开 `双击打开工具箱.exe` 程序
+
+<img alt="工具例图" src="__img3" />
+
+<Callout type="idea">
+  如果没有在资源管理器中打开&#x2A;*显示`文件拓展名`**，则不会有 `exe` 后缀，虽然不影响使用，但是建议打开！
+</Callout>
+
+<Callout>
+  例图来自于有 
+
+  `init_boot`
+
+   分区机型的 ROOT 工具，与仅有 
+
+  `boot`
+
+   分区机型略有差异，但在本教程中不影响使用！
+</Callout>
+
+<Callout>
+  如果电脑还未安装 Android 驱动，则需要执行以下操作:
+
+  > 安装过则可以省略该步骤
+
+  先输入 `1`(安装驱动) 并按 `回车键`，按照提示安装驱动，然后再返回工具箱主页
+
+    <img alt="安装例图" src="__img4" />
+</Callout>
+
+<Callout type="warn">
+  务必保证驱动正确安装！
+
+  未安装驱动或未正确安装驱动，会在进入 `BootLoader` 模式时电脑无法正确识别设备！
+</Callout>
+
+确保设备已经进入到 BootLoader 界面后，使用数据线连接设备与电脑
+
+输入 `4`(解锁 BootLoader 锁) 并按 `回车键`，然后开始解锁
+
+工具箱会执行解锁操作，但仍需要手动通过按键确认解锁，具体操作如下
+
+<Callout type="warn">
+  联发科处理器机型与高通处理器机型的解锁方式并不相同！请确认好自己机型的处理器厂商！
+</Callout>
+
+**解锁方式**:
+
+<Tabs groupId="device" items="['联发科', '高通']">
+  <Tab>
+    按压 `音量+键`，确认解锁
+
+        <img alt="联发科解锁界面" src="__img5" />
+
+    <Callout type="warn">
+      在较新系统版本解锁时，确认解锁会有**三秒**时间限制！超时则会无法确认解锁！
+
+      如果超时，则需要同时长按 `音量+键` 与 `电源键` 以强制重启，然后重新通过 `深度测试` 软件进入 `BootLoader` 模式，再通过工具箱解锁
+    </Callout>
+
+    解锁完毕后，同时长按 `音量+键` 与 `电源键` 以强制重启，即可重启至系统
+  </Tab>
+
+  <Tab>
+    按压 `音量-键`，再按压 `电源键` 以确认解锁
+
+        <img alt="高通解锁界面" src="__img6" />
+  </Tab>
+</Tabs>
+
+<Callout>
+  联发科处理器机型与较新系统版本的高通处理器机型在解锁后每次开机时会显示
+
+  **几行文字**
+
+  ，
+
+  **并不影响使用**
+
+  ！
+</Callout>
+
+> **至此，解锁完毕**
+>
+> 刷入 ROOT 参见 [ROOT 教程](./root-device.mdx)
+
+
+# [玩机资源](https://root.oom-wg.dev/resources)
+
+> 让玩机旅程变得轻松愉快吧！
+
+
+
+<Cards>
+  <Card title="模块资源" icon="<Puzzle />" href="./modules" />
+
+  <Card title="系统资源" icon="<Cog />" href="./systems" />
+</Cards>
+
+
+# [模块资源](https://root.oom-wg.dev/resources/modules)
+
+## 优质模块 [#优质模块]
+
+[Latest File](https://latestfile.zip/module) 提供了一些模块，模块在精不在多，开心是最重要的，但是也不能胡来喔
+
+<Callout title="小小的免责声明">
+  并不是所有模块都可以无脑刷入，也不保证所有模块都能够适配所有机型
+</Callout>
+
+> 大部分人可能会选择在酷安这样的社区寻找模块，但是作为体量较大的社区，鱼龙混杂，很多模块的质量堪忧，就算收费的也不在例外
+>
+> 有些模块表面好用，但是质量问题带来的副作用也是不容小觑的，只能说杜绝无脑杜绝跟风，不能被舆论所左右，按需善用才是明道
+
+## 多功能软件 [#多功能软件]
+
+[苏柚](https://shirosu.gal.tf/utils) 是一个多功能软件，主打存储优化方面，也有不少的小功能可用
+
+## 便用的 ROOT 管理器 [#便用的-root-管理器]
+
+[SSU Compat](https://shirosu.gal.tf/compat) 是一个第三方 ROOT 管理器，旨在优化 ROOT 使用体验
+
+
+# [系统资源](https://root.oom-wg.dev/resources/systems)
+
+## 官方升级&降级包 [#官方升级降级包]
+
+[Latest File](https://latestfile.zip/system/gt-neo) 收录了官方发布的所有回退/升级系统包，
+如果因为当前 UI 大版本不支持解锁等问题而需要刷机，可以从此寻找系统包
+
+<Callout>
+  使用官方系统包不需要解锁/ROOT，但是由于仅收录了回退/升级系统包，部分机型还暂无系统包
+</Callout>
+
+## 线刷包 [#线刷包]
+
+R+B 玩机乐园 提供了[付费系统包购买地址](https://realme.gtrom.eu.org/)，系统包均由 酷安@小帅当然帅 制作，
+适用于 `救砖`、`升/降级` 等用途，稳定有效，实惠好用
+
+
+# [真我 GT 系列](https://root.oom-wg.dev/series/gt)
+
+> 真我 GT 系列 解锁 & root 教程
+
+
+
+<DevicesInfo name="gt" config="gtConfig" />
+
+
+# [真我 Neo 系列](https://root.oom-wg.dev/series/neo)
+
+> 真我 Neo 系列 解锁 & root 教程
+
+
+
+<DevicesInfo name="neo" config="neoConfig" />
+
+
+# [真我 X3 超级变焦版](https://root.oom-wg.dev/series/gt/rmx2086)
+
+> 真我 X3 超级变焦版 解锁 & ROOT 教程
+
+export const props = {"cnName":"none"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT](https://root.oom-wg.dev/series/gt/rmx2202)
+
+> 真我 GT 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":5}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT 大师版](https://root.oom-wg.dev/series/gt/rmx3361)
+
+> 真我 GT 大师版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"none"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT 大师探索版](https://root.oom-wg.dev/series/gt/rmx3366)
+
+> 真我 GT 大师探索版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"kona"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT2](https://root.oom-wg.dev/series/gt/rmx3310)
+
+> 真我 GT2 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":3}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT2 Pro](https://root.oom-wg.dev/series/gt/rmx3300)
+
+> 真我 GT2 Pro 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":3}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT2 大师探索版](https://root.oom-wg.dev/series/gt/rmx3551)
+
+> 真我 GT2 大师探索版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":3}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT5 150W](https://root.oom-wg.dev/series/gt/rmx3820)
+
+> 真我 GT5 150W 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":4}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT5 240W](https://root.oom-wg.dev/series/gt/rmx3823)
+
+> 真我 GT5 240W 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":4}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT5 Pro](https://root.oom-wg.dev/series/gt/rmx3888)
+
+> 真我 GT5 Pro 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":5}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT6](https://root.oom-wg.dev/series/gt/rmx3800)
+
+> 真我 GT6 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":5}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT7 Pro](https://root.oom-wg.dev/series/gt/rmx5010)
+
+> 真我 GT7 Pro 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT7 Pro 竞速版](https://root.oom-wg.dev/series/gt/rmx5090)
+
+> 真我 GT7 Pro 竞速版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT7 & GT7 阿斯顿马丁F1限量版](https://root.oom-wg.dev/series/gt/rmx6688)
+
+> 真我 GT7 & GT7 阿斯顿马丁F1限量版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT8](https://root.oom-wg.dev/series/gt/rmx6699)
+
+> 真我 GT8 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":7}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版](https://root.oom-wg.dev/series/gt/rmx5200)
+
+> 真我 GT8 Pro & GT8 Pro 阿斯顿马丁F1限量版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":7}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo](https://root.oom-wg.dev/series/neo/rmx3031)
+
+> 真我 GT Neo 解锁 & ROOT 教程
+
+export const props = {"glName":"realme X7 Max","ramdisk":"boot","unlock":"mt6893"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo 闪速版](https://root.oom-wg.dev/series/neo/rmx3350)
+
+> 真我 GT Neo 闪速版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"mt6893"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo2 & GT Neo2 龙珠定制版](https://root.oom-wg.dev/series/neo/rmx3370)
+
+> 真我 GT Neo2 & GT Neo2 龙珠定制版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"kona"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo2T](https://root.oom-wg.dev/series/neo/rmx3357)
+
+> 真我 GT Neo2T 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"mt6893"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo3 80W](https://root.oom-wg.dev/series/neo/rmx3560)
+
+> 真我 GT Neo3 80W 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"mt6895"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版](https://root.oom-wg.dev/series/neo/rmx3562)
+
+> 真我 GT Neo3 150W & GT Neo3 150W 火影定制版 & GT Neo3 150W 王者荣耀赛事版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":"mt6895"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo3T](https://root.oom-wg.dev/series/neo/rmx3371)
+
+> 真我 GT Neo3T 解锁 & ROOT 教程
+
+export const props = {"cnName":"真我 Q5 Pro"}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo5 SE](https://root.oom-wg.dev/series/neo/rmx3700)
+
+> 真我 GT Neo5 SE 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"boot","unlock":4}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo5 150W](https://root.oom-wg.dev/series/neo/rmx3706)
+
+> 真我 GT Neo5 150W 解锁 & ROOT 教程
+
+export const props = {"glName":"realme GT3 150W","ramdisk":"boot","unlock":4}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo5 240W](https://root.oom-wg.dev/series/neo/rmx3708)
+
+> 真我 GT Neo5 240W 解锁 & ROOT 教程
+
+export const props = {"glName":"realme GT3 240W","ramdisk":"boot","unlock":4}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo6 SE](https://root.oom-wg.dev/series/neo/rmx3850)
+
+> 真我 GT Neo6 SE 解锁 & ROOT 教程
+
+export const props = {"glName":"realme GT6T","ramdisk":"init_boot","unlock":5}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 GT Neo6](https://root.oom-wg.dev/series/neo/rmx3852)
+
+> 真我 GT Neo6 解锁 & ROOT 教程
+
+export const props = {"glName":"realme GT6","ramdisk":"init_boot","unlock":5}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 Neo7 & Neo7 不良人限定版](https://root.oom-wg.dev/series/neo/rmx5060)
+
+> 真我 Neo7 & Neo7 不良人限定版 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 Neo7x](https://root.oom-wg.dev/series/neo/rmx5071)
+
+> 真我 Neo7x 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 Neo7 SE](https://root.oom-wg.dev/series/neo/rmx5080)
+
+> 真我 Neo7 SE 解锁 & ROOT 教程
+
+export const props = {"glName":"realme GT7T","ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 Neo7 Turbo](https://root.oom-wg.dev/series/neo/rmx5062)
+
+> 真我 Neo7 Turbo 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":6}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}
+
+# [真我 Neo8](https://root.oom-wg.dev/series/neo/rmx8899)
+
+> 真我 Neo8 解锁 & ROOT 教程
+
+export const props = {"ramdisk":"init_boot","unlock":7}
+
+{
+props.cnName &&
+
+<>
+  {
+  props.cnName !== 'none'
+      ? <Callout>该机型的国行版名称为 <i>{props.cnName}</i></Callout>
+      : <Callout>该机型没有对应的国行版机型！</Callout>
+  }
+  <Callout type='warn'>该机型为<strong>海外版</strong>机型！暂不提供相关教程！</Callout>
+</>
+}
+
+{props.glName && <Callout>该机型的海外版名称为 <i>{props.glName}</i></Callout>}
+
+{
+props.ramdisk && (props.ramdisk === 'boot'
+? <Callout type='warn'>该机型仅有 <code>boot</code> 分区，使用该机型的 ROOT 工具时需要<strong>区分版本</strong>！</Callout>
+: <Callout type='success'>该机型有 <code>init_boot</code> 分区，可以使用<strong>该机型</strong>的 <code>init_boot</code> 通用 ROOT 工具</Callout>)
+}
+
+{
+props.unlock &&
+
+(typeof props.unlock === 'number'
+? <Callout type='success'>
+该机型可以正常走官方渠道解锁，需要在 <i>UI<strong>{props.unlock}</strong></i> 才可解锁，部分机型可能在高版本也可解锁，请以实际情况为准
+
+<Callout type='idea'>回退包可在 <Link href='https://latestfile.zip/system/gt-neo' target='_blank'>Latest File</Link> 中找到</Callout>
+</Callout>
+
+: props.unlock !== 'none'
+? <Callout type='warn'>该机型不可以走官方渠道解锁，请通过漏洞强行解锁！</Callout>
+: <Callout type='error'>该机型不可以走官方渠道解锁！</Callout>)
+
+}
+
+import { LockKeyholeOpen, PackageOpen, ShieldCheck } from 'lucide-react'
+
+{!props.cnName && <>
+
+<hr />
+
+<span>
+  请先加入{' '}
+  <Link href='/qq' target='_blank'>
+    QQ 群
+  </Link>
+  ，在<strong>群公告</strong>中获取一键工具
+</span>
+<Callout type='idea'>
+  工具<strong>完全免费</strong>，下载链接已放至<strong>群公告</strong>
+</Callout>
+
+<span>下载工具后，可按照如下教程继续</span>
+
+<Cards>
+  <Card
+    title='解锁设备'
+    icon={<LockKeyholeOpen />}
+    href={
+      typeof props.unlock === 'number'
+        ? '/tutorial/unlock-device'
+        : props.unlock === 'kona'
+          ? 'https://www.coolapk.com/feed/57282902?s=ODAwZTVmYzk1YjFjMzBnNjhkMTI2ODF6a1550'
+          : null
+    }>
+    若已解锁，可跳过该部分
+    {typeof props.unlock !== 'number' && <br />}
+    {props.unlock === 'none' ? (
+      <span>该机型暂无解锁途径，如果没有解锁，那么无缘 ROOT！</span>
+    ) : (
+      <span>
+        可以进群<strong>询问管理员</strong>获取解锁方法！
+        {props.unlock === 'kona' && (
+          <>
+            <br />
+            也可自行学习强解教程解锁！(该链接为强解教程)
+          </>
+        )}
+      </span>
+    )}
+  </Card>
+  <Card title='ROOT 设备' icon={<ShieldCheck />} href='/tutorial/root-device'>
+    ROOT 需要先解锁设备
+  </Card>
+</Cards>
+
+<hr />
+
+<Card title='玩机资源' icon={<PackageOpen />} href='/resources'>
+  让玩机旅程变得轻松愉快吧！
+</Card>
+
+</>}

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: root.oom-wg.dev
+Sitemap: https://root.oom-wg.dev/sitemap.xml
