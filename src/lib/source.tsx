@@ -52,11 +52,11 @@ export const docsConfig = {
 					},
 					{
 						label: '多功能软件',
-						href: 'https://suu.oom-wg.dev'
+						href: 'https://shirosu.gal.tf/utils'
 					},
 					{
 						label: '便用 ROOT 管理器',
-						href: 'https://ssu.oom-wg.dev'
+						href: 'https://shirosu.gal.tf/compat'
 					},
 					{
 						label: 'ROM 购买站',
